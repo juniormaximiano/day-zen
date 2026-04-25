@@ -6,6 +6,24 @@ O sistema permite cadastro e login de usuários, além de exibir sugestões diá
 
 ---
 
+## 🌐 Teste o projeto
+
+A aplicação está disponível online:
+
+👉 https://day-zen.vercel.app
+
+### Acesso
+
+Você pode:
+
+- Criar uma nova conta na página de cadastro  
+- Ou utilizar um usuário já cadastrado  
+
+Após o login, você será redirecionado para a página principal, onde poderá visualizar seus dados e interagir com as sugestões diárias.
+
+---
+
+
 ## 🚀 Funcionalidades
 
 - Cadastro de usuário com Firebase Authentication
