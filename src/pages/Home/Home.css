@@ -1,0 +1,242 @@
+.home-container {
+    min-height: 100vh;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 28px;
+    align-items: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.loading {
+    color: #e8e1d4;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.profile-card,
+.suggestions-area {
+    background: #e8e1d4;
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35);
+}
+
+.profile-card h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #4f6b4f;
+}
+
+.profile-card h2 {
+    margin: 12px 0 24px;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-info p {
+    margin: 0;
+    padding: 12px;
+    background: #f8f5ef;
+    border-radius: 12px;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.user-info span {
+    display: block;
+    margin-bottom: 4px;
+    color: #6e8b6b;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.logout-btn {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: #6e8b6b;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #4f6b4f;
+    transform: translateY(-2px);
+}
+
+.suggestions-area h2 {
+    margin: 0;
+    color: #0f172a;
+    font-size: 28px;
+}
+
+.subtitle {
+    margin: 8px 0 22px;
+    color: #4f6b4f;
+    font-weight: 600;
+}
+
+.suggestions-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.suggestion-card {
+    min-height: 120px;
+    padding: 20px;
+    border: 2px solid rgba(0,0,0,0.05);
+    border-radius: 18px;
+    background: #f8f5ef;
+    color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+    transition: 0.22s ease;
+}
+
+.suggestion-card:hover {
+  border-color: #6e8b6b;
+  box-shadow: 0 10px 25px rgba(110, 139, 107, 0.15);
+}
+
+
+
+.suggestion-card:hover {
+    transform: translateY(-5px);
+    border-color: #6e8b6b;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.22);
+}
+
+.suggestion-card span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.suggestion-card small {
+    margin-top: 18px;
+    color: #6e8b6b;
+    font-weight: 700;
+}
+
+.suggestion-card.done {
+    background: #6e8b6b;
+    color: white;
+    transform: scale(0.98);
+}
+
+.suggestion-card.done small {
+    color: #e8e1d4;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  position: sticky;     
+  bottom: 0;
+
+  margin-top: 40px;
+  padding: 14px 0;
+
+  background: rgba(25, 46, 19, 0.7);
+  backdrop-filter: blur(6px);
+
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #94b990;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer .dot {
+  opacity: 0.5;
+}
+
+.progress-card {
+  grid-column: 1 / -1;
+  max-width: 520px;
+  margin: 10px auto 0;
+  padding: 18px 22px;
+  background: #e8e1d4;
+  border-radius: 18px;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(79, 107, 79, 0.22);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  color: #0f172a;
+}
+
+.progress-header span {
+  font-weight: 800;
+}
+
+.progress-header strong {
+  color: #4f6b4f;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #f8f5ef;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #cfc5b3;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6e8b6b, #4f6b4f);
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress-card p {
+  margin: 12px 0 0;
+  color: #4f6b4f;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 800px) {
+    .home-container {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .suggestions-list {
+        grid-template-columns: 1fr;
+    }
+
+}
